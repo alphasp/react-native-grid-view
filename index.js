@@ -3,7 +3,6 @@
 var React = require('react-native');
 
 var {
-  AppRegistry,
   View,
   StyleSheet,
   ListView,
@@ -23,6 +22,11 @@ var CollectionView = React.createClass({
         });
 
         if (group.length > 0) {
+          if (this.props.cleanGrid == true) {
+            while (group.length < itemsPerRow) {
+              group.push(null);
+            }
+          }
           itemsGroups.push(group);
         }
 
