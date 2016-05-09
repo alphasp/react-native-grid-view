@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import { View, ListView } from 'react-native';
+import { StyleSheet, View, ListView } from 'react-native';
 
 export default
 class CollectionView extends React.Component {
@@ -54,7 +54,7 @@ class CollectionView extends React.Component {
     }
 };
 
-const styles = React.StyleSheet.create({
+const styles = StyleSheet.create({
     group: {
         flexDirection: 'row',
         overflow: 'hidden'
