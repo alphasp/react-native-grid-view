@@ -1,6 +1,7 @@
 'use strict';
 
-import React, { View, ListView } from 'react-native';
+import React from 'react';
+import { View, ListView } from 'react-native';
 
 export default
 class CollectionView extends React.Component {
